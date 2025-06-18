@@ -1,28 +1,31 @@
 // import headerStyle from '../Css/Header.module.css';
+import '../Css/Header.css';
+import menuIcon from '../../assets/MenuIcon.png';
+import logo from '../../assets/Logo.png';
 
 function Header()
 {
     return (
         <>
             <header>
-                <nav>
+                <nav className='HeaderContainer'>
                     {/* ===menu button=== */}
                     <button className='MenuBtn'>
-                        <img src=''></img>
+                        <img src={menuIcon}></img>
                     </button>
 
-                    {/* ===Logo=== */} //
-                    <img className='Logo' src=''></img>
+                    {/* ===Logo=== */}
+                    <img className='Logo' src={logo}></img>
 
                     {/* ===Tabs=== */}
                     <ul className='TabsContainer'>
-                        <li className='Tab' id='HomeTab'>Home</li>
-                        <li className='Tab' id='RestTab'>Restaurant</li>
-                        <li className='Tab' id='AboutTab'>About</li>
+                        <li className='HeadTab' id='HomeTab'>Home</li>
+                        <li className='HeadTab' id='RestTab'>Restaurant</li>
+                        <li className='HeadTab' id='AboutTab'>About</li>
                     </ul>
 
                     {/* ===Account Icon=== */}
-                    <button>
+                    <button className='AccountBtn'>
                         <img src=''></img>
                     </button>
                 </nav>
@@ -31,14 +34,14 @@ function Header()
             {/* ===Account Pop Up=== */}
             <div>
                 {/* ===General=== */}
-                <ul>
-                    <li>Profile</li>
+                <ul className='PopUpContainer'>
+                    <li className='PopUpItem' id='ProfileTab'>Profile</li>
                     <hr/>
-                    <li>Theme &gt;</li>
+                    <li className='PopUpItem' id='ThemeTab'>Theme &gt;</li>
                     <hr/>
-                    <li>Language &gt;</li>
+                    <li className='PopUpItem' id='LanguageTab'>Language &gt;</li>
                     <hr/>
-                    <li>Sign out</li>
+                    <li className="PopUpItem" id='SignOutTab'>Sign out</li>
                 </ul>
 
                 {/* ===Theme=== */}

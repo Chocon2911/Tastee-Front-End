@@ -1,7 +1,12 @@
+import Header from '../Component/Header';
+
 function Home()
 {
+
     return (
         <>
+            <Header/>
+
             <main>
                 {/* ===Account Pop Up=== */}
                 <div>
