@@ -7,18 +7,18 @@ function Header()
             <header>
                 <nav>
                     {/* ===menu button=== */}
-                    <button>
+                    <button className='MenuBtn'>
                         <img src=''></img>
                     </button>
 
                     {/* ===Logo=== */}
-                    <img src=''></img>
+                    <img className='Logo' src=''></img>
 
                     {/* ===Tabs=== */}
-                    <ul>
-                        <li>Home</li>
-                        <li>Restaurant</li>
-                        <li>About</li>
+                    <ul className='TabsContainer'>
+                        <li className='Tab' id='HomeTab'>Home</li>
+                        <li className='Tab' id='RestTab'>Restaurant</li>
+                        <li className='Tab' id='AboutTab'>About</li>
                     </ul>
 
                     {/* ===Account Icon=== */}
